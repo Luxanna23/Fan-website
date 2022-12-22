@@ -1,0 +1,225 @@
+body {
+    background-image: url("wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+  }
+  nav {
+    text-align: center;
+  }
+
+/* code menu */
+
+  .menu {
+    margin-top: 0;
+    display: inline-block;
+  }
+  .menu > li {
+    float: left;
+    color: #ffe51f;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    background: rgba(1, 4, 26, 0.7);
+    cursor: pointer;
+    font-size: 17px;
+  }
+  .sub-menu {
+    transform: scale(0);
+    transform-origin: top center;
+    transition: all 300ms ease-in-out;
+  }
+  .sub-menu li {
+    font-size: 14px;
+    background: rgba(20, 4, 61, 0.8);
+    padding: 8px 0;
+    color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.489);
+    transform: scale(0);
+    transform-origin: top center;
+    transition: all 300ms ease-in-out;
+  }
+  .sub-menu li:last-child {
+    border-bottom: 0;
+  }
+  .sub-menu li:hover {
+    background: rgb(0, 0, 0);
+  }
+  .menu > li:hover .sub-menu li {
+    transform: scale(1);
+  }
+  .menu > li:hover .sub-menu {
+    transform: scale(1);
+  }
+/* fin code menu */
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: center;
+}
+.phrase {
+    color: #ffe51f;
+    font-size: 125%;
+    font-family: cursive;
+    text-align: center;
+    margin-bottom: 2%;
+}
+#list1 {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+/* FOOTER */
+.foot {
+    font-size: 120%;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.783);
+    position: relative;
+    margin: 5%;
+    margin-bottom: 0;
+    padding: 3%;
+    line-height: 200%;
+    text-align: center;
+    font-family: cursive;
+}
+
+.listfooter {
+    list-style: none;
+    text-decoration: none;
+}
+
+#list2 {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+#lien {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+}
+/* fin footer */
+
+/* code POUR LE INDEX.HTML */
+
+h2 {
+    font-size: 250%;
+    text-align: center;
+    color: rgb(0, 255, 234);
+    font-weight: bolder;
+    text-shadow: 0.1em 0.1em 0.2em rgb(176, 174, 138);
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.contenair {
+    margin: 5%;
+    background-color: rgba(6, 17, 56, 0.826);
+    display: flex;
+}
+#descri {
+    font-size: 105%;
+    color: aliceblue;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: cursive;
+    line-height: 200%;
+}
+
+/* CODE POUR RUNETERRA.HTML */
+
+.imgRuneterra {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 60%;
+    height: 60%;
+}
+
+#descri2 {
+    font-size: 105%;
+    color: aliceblue;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: cursive;
+    line-height: 200%;
+    text-align: center;
+}
+
+.souscontenair {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+} 
+#petittitre {
+    font-size: 120%;
+    text-align: center;
+    color: rgb(255, 225, 0);
+    text-shadow: 0.1em 0.1em 0.2em rgb(176, 174, 138);
+}
+#listregion {
+    font-size: 105%;
+    color: aliceblue;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: cursive;
+    line-height: 200%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+/* css pour champions.html */
+#tableau {
+    margin: auto;
+    border: 1px solid;
+    width: 70%;
+    font-size: 105%;
+    color: aliceblue;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: cursive;
+    line-height: 200%;
+    text-align: center;
+    vertical-align: center;
+    border-bottom: 1px solid #ddd;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+td, th {
+    border: 1px solid;
+    padding: 3%;
+    height: 150%;
+}
+
+/* fin du code pour champions.html */
+.imgmap {
+    display: flex;
+    justify-content: center;
+    margin: auto; 
+    width: 80%;
+    height: 80%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#descri3 {
+    font-size: 105%;
+    color: aliceblue;
+    padding: 20px;
+    font-family: cursive;
+    line-height: 200%;
+    text-align: center;
+} 
